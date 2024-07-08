@@ -35,16 +35,16 @@ class _CartScreenState extends State<CartScreen> {
   Widget buildUI() {
     return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       widget.checkoutProduct.isEmpty
-          ? const Expanded(
+          ? Expanded(
               child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // Image.asset("image/image 13.png"),
-                  SizedBox(
+                  Image.asset("image/image 13.png"),
+                  const SizedBox(
                     height: 50,
                   ),
-                  Text(
+                  const Text(
                     'Empty Cart',
                     textAlign: TextAlign.center,
                   ),

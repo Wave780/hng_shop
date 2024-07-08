@@ -1,37 +1,65 @@
 
 # SHOPPING APP
 
-This is an assignment report for the HNG stage one task. I was tasked to develop a simple shopping app without third party Api and packages that has two menu which are product and cart.
+This is an assignment report for the HNG stage two task. I was tasked to develop a simple shopping app with a third-party API and packages with two menus: product and cart.
 
 # Features
 
 - List of Product(API)
 - Add and remove products from the cart list.
-- Navigate to an order successful screen from the cart screen.
-- Packages used are; Http, Intl
+- Navigate to the order successful screen from the cart screen.
+- Packages used are; HTTP, Intl
 
 # Screenshots
-![Alt text]( "Optional Title")
+<b>Product Screen</b>
+<img src = "Screenshot.png">
+<b>Successful Order Screen</b>
+<img src = "Screenshot_2.png">
+<b>Empty Cart Screen</b>
+<img src = "Screenshot_3.png">
+<b>Cart Screen</b>
+<img src = "Screenshot_4.png">
+# The API Docs [Read] (https://docs.timbu.cloud/api/intro)
 
-
-
+# The API [Link] (http://timbu.cloud/)
 # Appetize Demo
 
-- you can view the app on Appetize.io{}
+- you can view the app on Appetize.io [Click here](https://appetize.io/app/vp6i7j6fanbtwpzovpehl2le4u?device=pixel7&osVersion=13.0&record=true) 
 
 # Project Structure
+lib/
+|- core/
+|   |- constants/
+|   |   |- enum.dart
+|- data/
+|   |- model/
+|   |   |- product_model.dart
+|   |   |- profile.json
+|   |- controllers/
+|   |   |- base_controller.dart
+|   |   |- dashboard_controller.dart
+|   |   |- products_controller.dart
+|   |   |- switch_controller.dart
+|   |   |- theme_notifier.dart
+|   |- services/
+|   |   |- dio_mixin.dart
+|   |   |- error_service.dart
+|   |   |- product_services.dart
+|- presentation/
+|   |- screens/
+|   |    |   |- home.dart
+|   |    |   |- profile.dart
+|   |- widgets/
+|    |   |   |- home/
+|    |   |   |   |- card_widget.dart
+|    |   |   |   |- home_description.dart
+|    |   |   |   |- home_image.dart
+|    |   |   |- profile/
+|    |   |   |   |- profile_stat.dart
+|    |   |- my_fade_route.dart
+|    |   |- shimmer.dart
+|- utils/
+|   |- locator.dart
+|- home.dart
+|- main.dart
 
-
-# Coode Overview
-
-# Models
-# Widgets
-- Product Item Widget (lib/widgets/product_item.dart): Represents a single product item in the list.
-# Screens
-- Products Screen (lib/screens/products_screen.dart): Displays a list of products.
-- Checkout Screen (lib/screens/checkout_screen.dart): Displays the products added for checkout and a button to navigate to the order successful screen.
-- Order Successful Screen (lib/screens/order_successful_screen.dart): Displays a message confirming the order.
-
-
-# Main flie
-- Main file (lib/main.dart): Contains the main entery point of the app, sets up navigation

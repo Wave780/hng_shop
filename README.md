@@ -18,7 +18,7 @@ This is an assignment report for the HNG stage two task. I was tasked to develop
   
 # Appetize Demo
 
-- you can view the app on Appetize.io [Click here](https://appetize.io/app/android/com.example.hng_shop?device=pixel7&osVersion=13.0&record=true) 
+- you can view the app on Appetize.io [Click here](https://appetize.io/embed/b_3cw6d6ipirp73ycftfga7qg7du) 
 
 # Screenshots
 <b>Product Screen</b>
